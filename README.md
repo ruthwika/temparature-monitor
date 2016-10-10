@@ -1,8 +1,8 @@
-#CODING EXERCISE - JavaScript/SPA
+EXERCISE - JavaScript/SPA
 
 ##Evaluation Guidelines 
 
-Using this plunker project as seed, Build a Temperature Monitor Single Page Application (SPA) using Angular and test your the aplication code using Jasmine.
+Build a Temperature Monitor Single Page Application (SPA) using Angular and test your the aplication code using Jasmine.
 
 **User Story #1**
 As an anonymous end user, I want to be able to enter any number of temperture records by entering a value and then clicking on the "Add" button.
@@ -28,15 +28,6 @@ The UI should inform me that I tried an invalid action.
 ##Unit Test Sample Data
 `[5, 1, -7, 7, 8, 3] --> [-7, 1, 3, 5, 7, 8] = (3+5)/2 = 4`
 `[5, 1, -7, 7, 8, 3, 9] --> [-7, 1, 3, 5, 7, 8, 9] = 5`
-
-
-##Instructions
-
-- **Fork** this Plunker Project
-- Put your name in the "--your name here--" placeholder in the index.html file
-- Code
-- Make sure to unit test your code
-- **Save** and Send us the link to this Plunker
 
 
 Jasmine documentation can be found at http://jasmine.github.io/2.0/introduction.html
