@@ -1,0 +1,32 @@
+/* Styles go here */
+
+.fixedButton
+{
+  width:80px;
+}
+
+.jumbo
+{
+  font-size : 500%;
+  vertical-align : middle;
+}
+
+.jumbotron{
+  color: #FFFFFF;
+  background-color:#4169E1 !important;
+  
+}
+
+.values
+{
+  font-size : 120%;
+}
+
+
+.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 300px;
+    height: 150px; 
+}

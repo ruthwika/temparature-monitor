@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="TemperatureMonitorApp">
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-controller="TemperatureMonitorController">
+  <div class="container">
+  <div class="jumbotron ">
+    <h1>Temperature Monitor</h1>
+</div>
+  <h1></h1>
+  <form name="temperatureMonitorForm" no-validate>
+    <label for="temperture">Add Temperture:</label>
+    <input name="temperture" id="temperture" type="number" ng-model="temperature">
+    <button class="btn-success fixedButton" ng-click="recordTemperature()" title="Click to add temperature">ADD</button>
+    <button class="btn-danger fixedButton" ng-click="reset()" title="Click to reset all temperatures">RESET</button>
+  </form>
+  <hr />
+  
+  <section>
+    
+   <center> 
+   <button class="btn-info" ng-click="getCurrentMedian()">Get Median Temperture</button>
+   <br/>
+   <br/>
+   <div class="rcorners2">
+   Current Median 
+   <br/>
+   <span class="jumbo">{{currentMedian}}</span>
+   </div>
+   </center>
+    <!-- display current media here-->
+  </section>
+  
+  <section>
+    <span>Temparatures Recorded :  </span><p class="values"> {{recordedTemperatures}} </p>
+  </section>
+  <hr/>
+  
+  <hr>
+  <hr>
+  </div>
+  <p>developer name: Vamshi</p>
+
+  <hr>
+  <a href="jasmine-test-runner.html">Run Unit Tests</a>
+  <script data-require="angular.js@*" data-semver="1.3.5" src="https://code.angularjs.org/1.3.5/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="temperature-monitor-service.js"></script>
+  <script src="temperature-monitor-controller.js"></script>
+</body>
+
+</html>
